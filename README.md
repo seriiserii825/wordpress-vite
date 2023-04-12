@@ -1,0 +1,2 @@
+# wp-vite
+# wordpress-vite
