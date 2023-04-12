@@ -1,0 +1,140 @@
+//<FORM>
+// Снипет (HTML):
+.form {
+    padding: 3rem 4rem 5rem;
+
+    &-group {
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            background: #ffffff;
+            border: 1px solid #fff;
+            padding: 1.4rem 3rem;
+            outline: none;
+            font-family: "Gilroy";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.6rem;
+            line-height: 130%;
+            color: #302a25;
+            border-radius: 0;
+            opacity: 0.8;
+            transition: all 300ms ease-out;
+            margin-bottom: 2rem;
+
+            &:focus {
+                border-color: rgba($accent, 0.5);
+            }
+        }
+
+        textarea {
+            resize: vertical;
+            height: 5.5rem;
+            overflow: hidden;
+        }
+    }
+
+    &-footer {
+        display: flex;
+        align-items: center;
+        margin-top: -1.2rem;
+        .wpcf7-spinner {
+            display: none;
+        }
+
+        input[type="submit"] {
+            flex-basis: 55%;
+        }
+
+        input[type="checkbox"] {
+            display: none;
+            &:checked + .wpcf7-list-item-label {
+                &::after {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .privacy {
+            flex-basis: 45%;
+            font-weight: 500;
+            font-size: 1.4rem;
+            line-height: 130%;
+            color: #302a25;
+
+            .wpcf7-list-item {
+                padding-left: 26px;
+            }
+
+            .wpcf7-list-item-label {
+                position: relative;
+                cursor: pointer;
+                &::before {
+                    border: 1px solid #302a25;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 2px;
+                    position: absolute;
+                    top: 3px;
+                    left: -18px;
+                }
+
+                &::after {
+                    width: 10px;
+                    height: 10px;
+                    position: absolute;
+                    top: 3px;
+                    left: -18px;
+                    background-image: url(../i/static/check.svg);
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: 63%;
+                    opacity: 0;
+                }
+
+                a {
+                    transition: all 300ms ease-out;
+                    &:hover {
+                        color: $accent;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//</FORM>
+
+// <BUTTONS>
+// Снипет (HTML): btn
+// @import "button";
+
+// <INPUTS>
+// Снипет (HTML): inp
+// @import "input";
+
+// <CHECK>
+// Снипет (HTML): chk
+// @import "checkbox";
+
+// <RADIO>
+// Снипет (HTML): opt
+// @import "radio";
+
+// <SELECT>
+// Снипет (HTML): sel
+// @import "select";
+
+// <RATING>
+// Снипет (HTML): rating
+// @import "rating";
+
+// <QUANTITY>
+// Снипет (HTML): qa
+// @import "quantity";
+
+// <RANGE>
+// Снипет (HTML):
+// @import "range";
